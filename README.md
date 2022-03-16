@@ -16,6 +16,5 @@
  - Custom Drawer also With Custom Drawer Item List so you have full control over Drawer / or you can just import and add <DrawerItemList ...props/> under Drawer Scroll
  - React Dot Env for accessing .env files
  - Absolute Imports. Add your absolute imports aliases under "moduleResolver" in "babel.config.js"
- - If you've installed path-intellisense extension in VS-CODE then uncomment .vscode/settings to enable autofill when using absolute imports
  - Expo Application Services Ready project (after you initializes EAS)
  - Added Many Custom Components "Custom Text/ Custom Buttons / Fabs ..."

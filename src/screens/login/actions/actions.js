@@ -1,8 +1,8 @@
-import * as types from "../constants/constants";
-import axios from "axios";
-import { ServerUrl } from "../../../redux/helper/helper";
 import { Alert } from "react-native";
-import { deviceInfo, versionCode } from "../../../constants";
+import axios from "axios";
+import { deviceInfo, versionCode } from "src/constants";
+import { ServerUrl } from "src/redux/helper/helper";
+import * as types from "src/screens/login/constants/constants";
 
 export function submitLoginAccount(data) {
   return async (dispatch) => {

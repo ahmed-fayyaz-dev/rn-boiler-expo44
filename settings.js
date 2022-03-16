@@ -1,7 +1,7 @@
+import { LogBox } from "react-native";
+import { useKeepAwake } from "expo-keep-awake";
 import i18n from "i18n-js";
 import { enableFreeze } from "react-native-screens";
-import { useKeepAwake } from "expo-keep-awake";
-import { LogBox } from "react-native";
 import * as Sentry from "sentry-expo";
 
 import { SENTRY_DSN } from "./appConstants";

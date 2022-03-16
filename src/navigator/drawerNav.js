@@ -1,22 +1,23 @@
 import React from "react";
-import { createDrawerNavigator } from "@react-navigation/drawer";
 import { Dimensions, Image, StyleSheet, View } from "react-native";
+import { createDrawerNavigator } from "@react-navigation/drawer";
+import { format } from "date-fns";
 import { useTheme } from "react-native-paper";
 import { connect } from "react-redux";
-import { format } from "date-fns";
 
-import { icons } from "../../assets/images";
-import { drawerActiveTint, drawerIcon } from "../styles/navCss";
-import { IonIcons } from "../constants";
-import { CustomCaption } from "../components/customText";
-import { mgMs } from "../styles";
-import DrawerContent from "../components/drawer";
+import { icons } from "assets/images";
+import { CustomCaption } from "src/components/customText";
+import DrawerContent from "src/components/drawer";
+import { IonIcons } from "src/constants";
 
-import { logout } from "../redux/common/actions/actions";
+import { logout } from "src/redux/common/actions/actions";
 
 //screens
-import Dashboard from "../screens/dashboard";
-import { Playground } from "../screens/playground";
+import Dashboard from "src/screens/dashboard";
+import MasterDetailForm from "src/screens/masterDetailForm";
+import { Playground } from "src/screens/playground";
+import { mgMs } from "src/styles";
+import { drawerActiveTint, drawerIcon } from "src/styles/navCss";
 
 const Drawer = createDrawerNavigator();
 
@@ -75,14 +76,18 @@ const DrawerNav = (props) => {
           headerTitleContainerStyle: { height: 0, width: 0 },
           headerRight: headerRight,
 
-          drawerIcon: ({ color, focused, size }) => (
-            <DrawerIcons
-              color={color}
-              focused={focused}
-              size={size}
-              icon={icons.drawer.report}
-            />
-          ),
+          drawerIcon: ({ color, focused, size }) =>
+            DrawerIcons({ color, focused, size, icon: icons.drawer.report }),
+        }}
+      />
+
+      <Drawer.Screen
+        name="masterDetailForm"
+        component={MasterDetailForm}
+        options={{
+          title: "Master Detail Form",
+          drawerIcon: ({ color, focused, size }) =>
+            DrawerIcons({ color, focused, size, icon: icons.drawer.topSale }),
         }}
       />
 

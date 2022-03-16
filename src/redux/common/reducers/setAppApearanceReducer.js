@@ -1,5 +1,5 @@
 import { Appearance } from 'react-native';
-import * as types from '../constants/constants';
+import * as types from 'src/redux/common/constants/constants';
 
 const initial = {
   loading: false,

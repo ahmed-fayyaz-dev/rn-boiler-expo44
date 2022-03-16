@@ -3,17 +3,18 @@ import { StyleSheet, View } from "react-native";
 import DropDownPicker from "react-native-dropdown-picker";
 import { useTheme } from "react-native-paper";
 
-import { IonIcons } from "../constants";
+import { CustomText } from "./customText";
+import { IonIcons } from "src/constants";
 import globalStyles, {
   bRss,
   buttonText,
   iconSize,
   mgMs,
   onBackgroundDark,
-  mgS,
+  // mgS,
+  pdHs,
   zIndexM,
-} from "../styles";
-import { CustomText } from "./customText";
+} from "src/styles";
 
 export const CustomDropDownPicker = ({
   title,

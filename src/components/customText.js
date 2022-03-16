@@ -10,7 +10,7 @@ import {
   withTheme,
 } from "react-native-paper";
 
-import { title, caption, text, buttonText } from "../styles";
+import { title, caption, text, buttonText } from "src/styles";
 
 function CText(props) {
   return (

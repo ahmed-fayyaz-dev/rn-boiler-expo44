@@ -3,11 +3,11 @@ import { StyleSheet, View, Image, TouchableOpacity } from "react-native";
 import { useTheme } from "react-native-paper";
 import Animated, { ZoomOut } from "react-native-reanimated";
 
-import { icons } from "../../../assets/images";
-import { CustomText, CustomCaption } from "../../components/customText";
-import { hitSlopS } from "../../styles/index";
-import { GapV } from "../../components/gap";
-import { setStorageItem } from "../../constants/index";
+import { icons } from "assets/images";
+import { CustomText, CustomCaption } from "src/components/customText";
+import { GapV } from "src/components/gap";
+import { setStorageItem } from "src/constants/index";
+import { hitSlopS } from "src/styles/index";
 
 export default function WelcomeScreen({ navigation }) {
   const { colors } = useTheme();

@@ -1,9 +1,9 @@
 import React, { useEffect, useState, useRef } from "react";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { getStorageItem } from "../../constants";
+import { getStorageItem } from "src/constants";
+import Login from "src/screens/login";
 
-import WelcomeScreen from "../../screens/welcomeScreen";
-import Login from "../../screens/login";
+import WelcomeScreen from "src/screens/welcomeScreen";
 
 const Stack = createNativeStackNavigator();
 

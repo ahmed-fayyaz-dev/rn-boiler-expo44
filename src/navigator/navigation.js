@@ -1,20 +1,20 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
-import { NavigationContainer } from "@react-navigation/native";
-import { Ionicons } from "@expo/vector-icons";
 import { Appearance, I18nManager } from "react-native";
-import { connect } from "react-redux";
-import { Provider as PaperProvider } from "react-native-paper";
+import { Ionicons } from "@expo/vector-icons";
+import { NavigationContainer } from "@react-navigation/native";
 import i18n from "i18n-js";
-
-import { callApi } from "../constants/apiCall";
-import { setLanguage } from "../redux/common/actions/actions";
-import { submitGetDashboardData } from "../screens/dashboard/actions/actions";
-import { submitLoginAccount } from "../screens/login/actions/actions";
-
-import { getStorageItem } from "../constants";
-import { CombinedLightTheme, CombinedDarkTheme } from "../styles/theme";
+import { Provider as PaperProvider } from "react-native-paper";
+import { connect } from "react-redux";
 
 import RootNavigator from "./rootNavigator";
+import { getStorageItem } from "src/constants";
+import { callApi } from "src/constants/apiCall";
+import { setLanguage } from "src/redux/common/actions/actions";
+import { submitGetDashboardData } from "src/screens/dashboard/actions/actions";
+import { submitLoginAccount } from "src/screens/login/actions/actions";
+
+import { CombinedLightTheme, CombinedDarkTheme } from "src/styles/theme";
+
 
 //App nav
 function AppNavigator(props) {

@@ -1,11 +1,11 @@
-import * as types from "../constants/constants";
-import * as commonTypes from "../../../redux/common/constants/constants";
-
-import axios from "axios";
-import { ServerUrl } from "../../../redux/helper/helper";
 import { Alert } from "react-native";
+import axios from "axios";
+import { deviceInfo, versionCode } from "src/constants";
+import * as commonTypes from "src/redux/common/constants/constants";
 
-import { deviceInfo, versionCode, success } from "../../../constants";
+import { ServerUrl } from "src/redux/helper/helper";
+
+import * as types from "src/screens/dashboard/constants/constants";
 
 const getConfig = (data, type, getState) => {
   const companyId = getState().companyIdReducer.data;

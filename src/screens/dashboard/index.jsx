@@ -1,16 +1,16 @@
 import React, { useState } from "react";
-import Animated from "react-native-reanimated";
-import { connect } from "react-redux";
 import { View, StyleSheet } from "react-native";
 import { useTheme } from "react-native-paper";
+import Animated from "react-native-reanimated";
+import { connect } from "react-redux";
 
 import { submitGetDashboardData } from "./actions/actions";
-import gloabalStyle, { mgMs, mgVm, zIndexM } from "../../styles/index";
-import { GapV } from "../../components/gap";
-import { CustomSnackbar } from "../../components/customSnackbar";
-import VirtualizedView from "../../components/virtualizedBackedContainer";
-import { StickyHeader } from "../../components/stickyHeader";
-import { callApi } from "../../constants/apiCall";
+import { CustomSnackbar } from "src/components/customSnackbar";
+import { GapV } from "src/components/gap";
+import { StickyHeader } from "src/components/stickyHeader";
+import VirtualizedView from "src/components/virtualizedBackedContainer";
+import { callApi } from "src/constants/apiCall";
+import gloabalStyle, { mgMs, mgVm, zIndexM } from "src/styles/index";
 
 function Dashboard({
   submitLoginReducer,

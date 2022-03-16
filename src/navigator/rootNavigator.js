@@ -2,8 +2,8 @@ import React from "react";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { connect } from "react-redux";
 
-import AuthStack from "./navSlices/authStack";
 import DrawerNav from "./drawerNav";
+import AuthStack from "./navSlices/authStack";
 
 const Stack = createNativeStackNavigator();
 

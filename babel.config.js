@@ -30,9 +30,8 @@ module.exports = function (api) {
           root: ["."],
           alias: {
             src: "./src",
+            assets: "./assets",
             appConstants: "./appConstants",
-            components: "./src/components",
-            helper: "./src/redux/helper/helper",
           },
         },
       ],

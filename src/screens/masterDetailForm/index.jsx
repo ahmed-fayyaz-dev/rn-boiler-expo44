@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from "react";
-import { connect } from "react-redux";
 // import i18n from "i18n-js";
 import { View } from "react-native";
 // import { useTheme } from "react-native-paper";
 import Animated, { BounceInUp, Layout, FadeOut } from "react-native-reanimated";
+import { connect } from "react-redux";
 
 //CustomFuncs/components/etc
-import gloabalStyle from "../../styles/index";
-import { CustomSnackbar } from "../../components/customSnackbar";
-import VirtualizedView from "../../components/virtualizedBackedContainer";
+import { CustomSnackbar } from "src/components/customSnackbar";
+import VirtualizedView from "src/components/virtualizedBackedContainer";
+import { submitGetDashboardDataDetail } from "src/screens/dashboard/actions/actions";
+import gloabalStyle from "src/styles/index";
 
 //REDUX
-import { submitGetDashboardDataDetail } from "../dashboard/actions/actions";
 
 function MasterDetailForm() {
   // const t = (v) => i18n.t(v); // Getting translated text

@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 export const UD = {
   locale: "ud-PK",
   language: "urdu",

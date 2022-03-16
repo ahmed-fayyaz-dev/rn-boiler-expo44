@@ -3,6 +3,7 @@ import { Button } from "react-native";
 import Animated, { BounceInUp, Layout, FadeOut } from "react-native-reanimated";
 
 export const Playground = () => {
+  // eslint-disable-next-line no-unused-vars
   const [isDatePickerVisible, setDatePickerVisibility] = useState(false);
 
   const showDatePicker = () => {
@@ -13,6 +14,7 @@ export const Playground = () => {
     setDatePickerVisibility(false);
   };
 
+  // eslint-disable-next-line no-unused-vars
   const handleConfirm = (date) => {
     console.warn("A date has been picked: ", date);
     hideDatePicker();

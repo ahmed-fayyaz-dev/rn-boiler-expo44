@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { ScrollView, View, StyleSheet, Image, StatusBar } from "react-native";
+import { useTheme, Divider } from "react-native-paper";
 import Animated, {
   BounceInDown,
   BounceOutDown,
@@ -7,16 +9,23 @@ import Animated, {
   FadeOut,
 } from "react-native-reanimated";
 import { connect } from "react-redux";
-import { useTheme, Divider } from "react-native-paper";
-import { ScrollView, View, StyleSheet, Image, StatusBar } from "react-native";
 
-import { icons } from "../../../assets/images";
-import { GapV } from "../../components/gap";
-import CustomInput from "../../components/CustomInput";
-import { CustomRoundButton } from "../../components/buttons";
-import { IonIcons, setStorageItem } from "../../constants";
-import { CustomCheckbox } from "../../components/CustomCheckbox";
-import { CustomSnackbar } from "../../components/customSnackbar";
+import { submitLoginAccount } from "./actions/actions";
+import { icons } from "assets/images";
+
+import { CustomCheckbox } from "src/components/CustomCheckbox";
+import CustomInput from "src/components/CustomInput";
+import { CustomRoundButton } from "src/components/buttons";
+import { CustomSnackbar } from "src/components/customSnackbar";
+import {
+  CustomCaption,
+  CustomSubheading,
+  CustomText,
+} from "src/components/customText";
+import { GapV } from "src/components/gap";
+import { IonIcons, setStorageItem } from "src/constants";
+import { callApi } from "src/constants/apiCall";
+import { submitGetDashboardData } from "src/screens/dashboard/actions/actions";
 import gloabalStyle, {
   bRm,
   iconSizeL,
@@ -24,16 +33,7 @@ import gloabalStyle, {
   mgMs,
   mgS,
   onBackgroundDark,
-} from "../../styles/index";
-import {
-  CustomCaption,
-  CustomSubheading,
-  CustomText,
-} from "../../components/customText";
-
-import { callApi } from "../../constants/apiCall";
-import { submitLoginAccount } from "./actions/actions";
-import { submitGetDashboardData } from "../dashboard/actions/actions";
+} from "src/styles/index";
 
 function Login({ navigation, submitLoginReducer, submitLoginAccount }) {
   const { colors } = useTheme();

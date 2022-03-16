@@ -1,8 +1,8 @@
-import { DarkTheme, DefaultTheme } from "react-native-paper";
 import {
   DefaultTheme as defThemeNav,
   DarkTheme as darkThemeNav,
 } from "@react-navigation/native";
+import { DarkTheme, DefaultTheme } from "react-native-paper";
 
 const bRm = 50;
 

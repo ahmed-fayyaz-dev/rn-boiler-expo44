@@ -7,8 +7,7 @@ import {
   TouchableWithoutFeedback,
   StyleSheet,
 } from "react-native";
-
-import { bRs } from "../css";
+import { bRs } from "src/styles";
 
 export const MyPopup = (props) => {
   const { visible, onDismiss } = props;

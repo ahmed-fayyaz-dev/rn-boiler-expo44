@@ -1,6 +1,6 @@
 import React from "react";
 import { View } from "react-native";
-import { mgS, mgM, mgL } from "../styles";
+import { mgS, mgM, mgL } from "src/styles";
 
 export function GapV({ small, large, xL }) {
   return (

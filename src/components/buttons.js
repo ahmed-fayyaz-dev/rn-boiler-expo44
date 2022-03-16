@@ -1,10 +1,10 @@
 import React from "react";
-import { Button, FAB, IconButton, useTheme } from "react-native-paper";
 import { View } from "react-native";
+import { Button, FAB, IconButton, useTheme } from "react-native-paper";
 
-import { bRss, hitSlopS, mgS } from "../styles/index";
-import gloablStyle from "../styles/index";
 import { CustomSubheading, CustomText } from "./customText";
+import { bRss, hitSlopS, mgS } from "src/styles/index";
+import gloablStyle from "src/styles/index";
 
 export const CustomRoundButton = ({
   title,

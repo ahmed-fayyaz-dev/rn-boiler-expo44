@@ -1,19 +1,18 @@
 import React from "react";
 import { Image, View, StyleSheet } from "react-native";
 import { DrawerItem, DrawerContentScrollView } from "@react-navigation/drawer";
-// import Animated from "react-native-reanimated";
-import { useTheme as paperTheme } from "react-native-paper";
+import { useTheme } from "@react-navigation/native";
 import { nativeApplicationVersion } from "expo-application";
+import { useTheme as paperTheme } from "react-native-paper";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-import { GapH } from "./gap";
-import { iconSize } from "../styles/navCss";
-import { icons } from "../../assets/images/index";
-import { useTheme } from "@react-navigation/native";
-import { bRss, mgS, onBackgroundDark, pdHm } from "../styles";
-import { CustomIconButton } from "../components/buttons";
-import { IonIcons, removeStorageItem } from "../constants";
 import { CustomCaption, CustomSubheading, CustomText } from "./customText";
+import { GapH } from "./gap";
+import { icons } from "assets/images/index";
+import { CustomIconButton } from "src/components/buttons";
+import { IonIcons, removeStorageItem } from "src/constants";
+import { bRss, mgS, onBackgroundDark, pdHm } from "src/styles";
+import { iconSize } from "src/styles/navCss";
 
 const navigateTo = ({ navigation, name }) => {
   navigation.closeDrawer();

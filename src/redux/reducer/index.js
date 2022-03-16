@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
-import commonReducers from '../common/reducers';
-import loginReducers from '../../screens/login/reducers';
-import dashboardReducers from '../../screens/dashboard/reducers';
+import commonReducers from 'src/redux/common/reducers';
+import dashboardReducers from 'src/screens/dashboard/reducers';
+import loginReducers from 'src/screens/login/reducers';
 
 const rootReducer = (state, action) => {
   if (action.type === 'RESET_ACTION') {

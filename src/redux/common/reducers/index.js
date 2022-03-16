@@ -1,8 +1,8 @@
-import appAppearanceReducer from './setAppApearanceReducer';
-import locationReducer from './locationReducer';
 import addressReducer from './addressReducer';
-import languageReducer from './languageReducer';
 import gDateReducer from './globalDateReducer';
+import languageReducer from './languageReducer';
+import locationReducer from './locationReducer';
+import appAppearanceReducer from './setAppApearanceReducer';
 
 const reducers = {
   appAppearanceReducer,
